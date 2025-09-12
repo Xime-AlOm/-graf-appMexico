@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bandera de México</h1>
+
+  <div class="bandera-container">
+    <!-- VERDE -->
+    <div class="color-container">
+      <label for="verde">Esperanza</label>
+      <input type="range" id="verde" min="0" max="255" value="193">
+      <p id="verde-hex">#00C100</p>
+      <div class="color-box" id="verde-box"></div>
+    </div>
+
+    <!-- BLANCO -->
+    <div class="color-container">
+      <label for="blanco">Unidad</label>
+      <input type="range" id="blanco" min="0" max="255" value="255">
+      <p id="blanco-hex">#FFFFFF</p>
+      <div class="color-box" id="blanco-box">
+        <!-- Aquí va tu escudo -->
+        <img src="escudo.png" alt="Escudo de México" class="escudo-img">
+      </div>
+    </div>
+
+    <!-- ROJO -->
+    <div class="color-container">
+      <label for="rojo">Sangre de nuestros héroes nacionales</label>
+      <input type="range" id="rojo" min="0" max="255" value="174">
+      <p id="rojo-hex">#AE0000</p>
+      <div class="color-box" id="rojo-box"></div>
+    </div>
+  </div>
+
+  <!-- Tabla con nombres -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Matrícula</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ximena Alcantara Omaña</td>
+        <td>23021613</td>
+      </tr>
+      <tr>
+        <td>Edgar Charrez Dothi</td>
+        <td>25200462</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
